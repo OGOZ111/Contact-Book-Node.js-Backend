@@ -6,3 +6,5 @@ Backend server for contact book
 
 Express
 Nodemon
+DotEnv
+Thunder Client
