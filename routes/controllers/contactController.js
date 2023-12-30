@@ -2,8 +2,46 @@
 //@route GET /api/contacts
 //@access public
 
-const getContact = (req, res) => {
+const getContacts = (req, res) => {
   res.status(200).json({ message: "Get all contacts" });
 };
 
-module.exports = { getContact };
+//@desc Create new contact
+//@route POST /api/contacts
+//@access public
+
+const createContact = (req, res) => {
+  res.status(201).json({ message: "Create Contact" });
+};
+
+//@desc GET contact
+//@route GET /api/contacts/:id
+//@access public
+
+const getContact = (req, res) => {
+  res.status(200).json({ message: `Get contact for ${req.params.id}` });
+};
+
+//@desc update contact
+//@route PUT /api/contacts/:id
+//@access public
+
+const updateContact = (req, res) => {
+  res.status(200).json({ message: `Update contact for ${req.params.id}` });
+};
+
+//@desc deletecontact
+//@route DELETE /api/contacts/:id
+//@access public
+
+const deleteContact = (req, res) => {
+  res.status(200).json({ message: `Delete contact for ${req.params.id}` });
+};
+
+module.exports = {
+  getContact,
+  createContact,
+  getContacts,
+  updateContact,
+  deleteContact,
+};
