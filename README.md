@@ -8,3 +8,4 @@ Express
 Nodemon
 DotEnv
 Thunder Client
+Mongoose/MongoDB
