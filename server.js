@@ -6,7 +6,7 @@ const connectDb = require("./config/dbConnection");
 connectDb();
 const app = express();
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT;
 
 app.use(express.json()); // convert to json format
 app.use("/api/contacts", require("./routes/contactRoutes"));
